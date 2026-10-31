@@ -18,6 +18,7 @@
     <link href="<%=ResolveUrl("~/Style/accordion.css") %>" rel="stylesheet" type="text/css" />
     <link href="<%=ResolveUrl("~/Style/pager.css" ) %>" rel="stylesheet" type="text/css" />
     <link href="<%=ResolveUrl("~/Style/jquery.alerts.css") %>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/Style/modern-ui.css") %>" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery1.10.2.min.js") %>"></script>
     <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery.signalR-2.2.2.js") %>"></script>
