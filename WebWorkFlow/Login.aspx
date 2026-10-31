@@ -9,6 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="IE=8" />
     <link href="Style/Css.css" rel="stylesheet" type="text/css" />
     <link href="Style/portal.css" rel="stylesheet" type="text/css" />
+    <link href="Style/modern-ui.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="Workflow.ico" type="image/x-icon" />
 </head>
 <body>
