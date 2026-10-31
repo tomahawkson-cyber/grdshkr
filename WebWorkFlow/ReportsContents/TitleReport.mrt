@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="4">
+      <value>,SubTitle,SubTitle,System.String,مانده_x0020_مرخصی_x0020_در_x0020_تاریخ,False,False</value>
+      <value>,Title,Title,System.String,نام_x0020_شرکت,False,False</value>
+      <value>,ReportDate,ReportDate,System.String,_x0031_394_x002F_05_x002F_01,False,False</value>
+      <value>,ReportTime,ReportTime,System.String,_x0031_2:20,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="2" type="Page" isKey="true">
+      <Border>All;Black;2;None;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <PageHeaderBand1 Ref="3" type="PageHeaderBand" isKey="true">
+          <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+          <Brush>EmptyBrush</Brush>
+          <ClientRectangle>0,0.4,20,2.19</ClientRectangle>
+          <Components isList="true" count="3">
+            <imgReportLogo Ref="4" type="Image" isKey="true">
+              <Border>All;[0:0:39];1;None;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>17.21,0,2.79,2.19</ClientRectangle>
+              <ComponentStyle>Blue Steel_Page_Header</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Right</DockStyle>
+              <Image>iVBORw0KGgoAAAANSUhEUgAAAE8AAAA+CAYAAABqSkbiAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAMHSURBVHhe7ZZhdRRBEIRjAQuxgIV7DwVYwEIsYAELWIgFLGAhFpYu3jWvrrdmU3c5Aj/qxwfZ6p657tqZ2XnYti3ciBSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDhxSDx+9/Pp1OX4rN5IknqGeHz8XXYs71XDwVaswRGPO94LleCuiPRed9LH7S845zD4f1cb/MTqjkWRRAYY8z95x/BIr/UfQ834qOoWD+DbxAHqs4FTCDx7H5H87PMAJ/4/8j83b1UV+7+rhvcPEAKgkF8iDwPPOaiq2YP463OHPQKOewuZM5H2DjGKy+Nnll3q4+0duuPo5fJINKuId5eKNzDtUoVsfMw2qZeTADq5/z8IzxM7fpGpR5sj7Rm6yv4xfJoIL3MA+rbM6BglXu3IaAzy2AFTlzcLxwjgIvTJkn61v0J+tDTCW/1Tz1VsFqlahGePVh3Fx1YLVlGYzFmcbasr5Ff7I+xFTyW82b50SjcoH6QHHDq2ZxZvE8K+YxIOubfTUVk/UhppLf2zy1JTlffSgA6uR5XK41T9aHmEq+1bzeRvcwD9u046+Zd80dFWPuYd4LYir5FvOwtfpgvta8W7ftvBeqL3LDW/xa8/76tkWzbd6//GDwhZfh3/6vPhj9JvlKIK8CRccZeRUoOEdtHXUfVL8LnLz3vaqUzucRm6ferlopWBFOHsycefMKAlzzZH2iP1lfxy+SQQUt80qbBzmbp+ZBYxwH8/xRq6lRH4a5QlfblnOaXX2ix119HL9IBpWg3t6fietvFKy20TQP4A1zQ7yq2HycaXyor0AOn3+Yuw1sM1Bb57fWz5NdfdTnrr6ONZ2ozLgWZV6DVYNVNcfgS6a26RHYShgzzyL0ALNm/uH85/4P62PDGCkGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGDykGh+3hF2fmm3GmV/ZhAAAAAElFTkSuQmCC</Image>
+              <Margins>0,0,0,0</Margins>
+              <Name>imgReportLogo</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Stretch>True</Stretch>
+            </imgReportLogo>
+            <PanelTitle2 Ref="5" type="Panel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,4.6,2.19</ClientRectangle>
+              <Components isList="true" count="2">
+                <txtReportDate Ref="6" type="Text" isKey="true">
+                  <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,4.6,0.91</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Top</DockStyle>
+                  <Font>Tahoma,10</Font>
+                  <Margins>0,0,5,0</Margins>
+                  <Name>txtReportDate</Name>
+                  <Page isRef="2" />
+                  <Parent isRef="5" />
+                  <Text>تاریخ گزارش : {Persian(ReportDate)}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                </txtReportDate>
+                <txtReportTime Ref="7" type="Text" isKey="true">
+                  <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.91,4.6,0.51</ClientRectangle>
+                  <ComponentStyle>Blue Steel_Page_Header</ComponentStyle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Top</DockStyle>
+                  <Font>Tahoma,10</Font>
+                  <Guid>3b3c089e2ced4d8eae4106255bc6525f</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>txtReportTime</Name>
+                  <Page isRef="2" />
+                  <Parent isRef="5" />
+                  <Text>ساعت : {Persian(ReportTime)}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <TextQuality>Wysiwyg</TextQuality>
+                  <Type>Expression</Type>
+                </txtReportTime>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Left</DockStyle>
+              <Name>PanelTitle2</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+            </PanelTitle2>
+            <PanelTitle1 Ref="8" type="Panel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0,12.61,2.19</ClientRectangle>
+              <Components isList="true" count="2">
+                <txtReportTitle Ref="9" type="Text" isKey="true">
+                  <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,12.61,1</ClientRectangle>
+                  <ComponentStyle>Blue Steel_Page_Header</ComponentStyle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Top</DockStyle>
+                  <Font>Tahoma,10</Font>
+                  <Guid>83186f7e323b41feb8cd0dfe3c2ee285</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>txtReportTitle</Name>
+                  <Page isRef="2" />
+                  <Parent isRef="8" />
+                  <Text>{Title}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </txtReportTitle>
+                <txtReportSubTilte Ref="10" type="Text" isKey="true">
+                  <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,1,12.61,1.19</ClientRectangle>
+                  <ComponentStyle>Blue Steel_Page_Header</ComponentStyle>
+                  <Conditions isList="true" count="0" />
+                  <DockStyle>Fill</DockStyle>
+                  <Font>Tahoma,10</Font>
+                  <Guid>9c56bfd6d5924aa7b14a14dbcd615cab</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>txtReportSubTilte</Name>
+                  <Page isRef="2" />
+                  <Parent isRef="8" />
+                  <Text>{SubTitle}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </txtReportSubTilte>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DockStyle>Fill</DockStyle>
+              <Guid>2e843e96e0234af6882378c7d7b8aff0</Guid>
+              <Name>PanelTitle1</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+            </PanelTitle1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="2" />
+          <Parent isRef="2" />
+          <PrintOn>OnlyFirstPage</PrintOn>
+        </PageHeaderBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>71d60ebafa6e431c9ab223c0c81ce5a9</Guid>
+      <Margins>0.5,0.5,0,0</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="11" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="12" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/13/2017 11:04:25 AM</ReportChanged>
+  <ReportCreated>9/27/2015 4:09:00 PM</ReportCreated>
+  <ReportFile>C:\Users\PC73\Source\Workspaces\Kara\Kara.Report\KaraReports\TitleReport.mrt</ReportFile>
+  <ReportGuid>584e5d7bb90249c1868838be67247dc7</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2015.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+		public static string ConvertMinutesToTime(decimal inputParameter)
+		{		
+			int input= int.Parse(inputParameter.ToString());
+			input= ((input / 60) * 100) + (input % 60);
+			if (input.ToString().Length &gt; 2)
+			{
+				return input.ToString().Insert(input.ToString().Length - 2, ":");
+			}
+			return input.ToString();
+		}
+		public static string ConvertMinutesToHours(int inputParameter)
+		{
+			int input= (inputParameter / 60);
+			return input.ToString();
+		}	
+		
+		public static string ConvertMinutesToHoursForSum(object inputParameter)
+		{
+			if(inputParameter == null)
+				return "";
+			int input= int.Parse(inputParameter.ToString());
+			
+			int hours= (input / 60);
+			
+			if((input%60)&gt;30)
+				hours=hours+1;
+			if(hours&lt;=0)
+				return "";
+			return hours.ToString();
+		}	
+		
+		
+		public static string ConvertTimeToMinutes(object inputParameter)
+		{
+			if(inputParameter == null)
+				return "";
+			int input= int.Parse(inputParameter.ToString());
+			
+			var result=(((input/100)*60)+(input%100));
+			if(result&lt;=0)
+				return "";
+			return result.ToString();
+		}
+	
+		public static string DayFormatPersent(object inputParameter,object r2t)
+		{
+			if(inputParameter == null)
+				return "";
+			string tf=r2t.ToString();
+			if(tf=="")
+				return inputParameter.ToString();
+			
+			return inputParameter.ToString()+" روز("+tf+"%)";
+		}
+		public static string DayFormat(object inputParameter,object r2t)
+		{
+			if(inputParameter == null)
+				return "";
+			string tf=TimeFormat(r2t);
+			if(tf=="")
+				return inputParameter.ToString();
+			
+			return inputParameter.ToString()+" روز("+tf+")";
+		}
+		public static string DayFormat(object inputParameter)
+		{
+			if(inputParameter == null)
+				return "";
+					
+			return inputParameter.ToString()+"روز";
+		}
+		public static string TimeFormat(object inputParameter)
+		{
+			if(inputParameter == null)
+				return "";
+			int input= int.Parse(inputParameter.ToString());
+			if(input==0)
+				return "";
+			
+			string inputStr=input.ToString();
+			
+			if (inputStr.Length == 1)
+				inputStr="00"+inputStr;
+				
+			else if (inputStr.Length == 2)
+				inputStr="0"+inputStr;
+			
+			if (inputStr.Length &gt;= 2)
+			{
+				return inputStr.Insert(inputStr.Length - 2, ":");
+			}
+			return input.ToString();
+		}
+		public static string TimeFormat(object inputParameter,object percent)
+		{
+			if(inputParameter == null)
+				return "";
+			return	TimeFormat(inputParameter)+"("+percent.ToString()+"% )";
+		}
+		
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="13">
+    <PW_Report_Title1 Ref="13" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item11 Ref="14" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item11>
+      </Conditions>
+      <Font>Tahoma,14,Bold</Font>
+      <Name>PW_Report_Title1</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Report_Title1>
+    <PW_Report_Title2 Ref="15" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item13 Ref="16" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item13>
+      </Conditions>
+      <Font>Tahoma,10,Bold</Font>
+      <Name>PW_Report_Title2</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Report_Title2>
+    <PW_Report_Summary Ref="17" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item15 Ref="18" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item15>
+      </Conditions>
+      <Font>Tahoma,10,Bold</Font>
+      <Name>PW_Report_Summary</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Report_Summary>
+    <PW_Page_Header Ref="19" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item17 Ref="20" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item17>
+      </Conditions>
+      <Font>Tahoma,10</Font>
+      <Name>PW_Page_Header</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Page_Header>
+    <PW_Page_Footer Ref="21" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>DimGray</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item19 Ref="22" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item19>
+      </Conditions>
+      <Font>Tahoma,13,Bold</Font>
+      <Name>PW_Page_Footer</Name>
+      <TextBrush>DarkKhaki</TextBrush>
+    </PW_Page_Footer>
+    <PW_Group_Header1 Ref="23" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item21 Ref="24" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item21>
+      </Conditions>
+      <Font>Tahoma,13,Bold</Font>
+      <Name>PW_Group_Header1</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Group_Header1>
+    <PW_Group_Footer1 Ref="25" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>DarkGray</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item23 Ref="26" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item23>
+      </Conditions>
+      <Font>Tahoma,9.75,Bold,Point,False,204</Font>
+      <Name>PW_Group_Footer1</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Group_Footer1>
+    <PW_Header1 Ref="27" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Bottom;[192:80:70];3;Solid;False;4;Black;True</Border>
+      <Brush>White</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item25 Ref="28" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item25>
+      </Conditions>
+      <Font>Tahoma,8,Bold</Font>
+      <Name>PW_Header1</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Header1>
+    <PW_Data1 Ref="29" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;Black;1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item27 Ref="30" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item27>
+      </Conditions>
+      <Font>Tahoma,8</Font>
+      <Name>PW_Data1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </PW_Data1>
+    <PW_Data1_Odd_x0020_Style Ref="31" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>WhiteSmoke</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item29 Ref="32" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item29>
+      </Conditions>
+      <Font>Tahoma,8</Font>
+      <Name>PW_Data1_Odd Style</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </PW_Data1_Odd_x0020_Style>
+    <PW_Data1_Even_x0020_Style Ref="33" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>EmptyBrush</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item31 Ref="34" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item31>
+      </Conditions>
+      <Font>Tahoma,8</Font>
+      <Name>PW_Data1_Even Style</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </PW_Data1_Even_x0020_Style>
+    <PW_Footer1 Ref="35" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseHorAlignment>True</AllowUseHorAlignment>
+      <AllowUseVertAlignment>True</AllowUseVertAlignment>
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>EmptyBrush</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item33 Ref="36" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item33>
+      </Conditions>
+      <Font>Tahoma,10,Bold</Font>
+      <HorAlignment>Right</HorAlignment>
+      <Name>PW_Footer1</Name>
+      <TextBrush>Black</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </PW_Footer1>
+    <PW_Data_Small Ref="37" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;Black;1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item35 Ref="38" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item35>
+      </Conditions>
+      <Font>Tahoma,6</Font>
+      <Name>PW_Data_Small</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </PW_Data_Small>
+  </Styles>
+</StiSerializer>

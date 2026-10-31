@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiStylesSheet">
+  <Styles isList="true" count="13">
+    <PW_Report_Title1 Ref="1" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item2 Ref="2" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item2>
+      </Conditions>
+      <Font>Tahoma,14,Bold</Font>
+      <Name>PW_Report_Title1</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Report_Title1>
+    <PW_Report_Title2 Ref="3" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item4 Ref="4" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item4>
+      </Conditions>
+      <Font>Tahoma,10,Bold</Font>
+      <Name>PW_Report_Title2</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Report_Title2>
+    <PW_Report_Summary Ref="5" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item6 Ref="6" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item6>
+      </Conditions>
+      <Font>Tahoma,10,Bold</Font>
+      <Name>PW_Report_Summary</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Report_Summary>
+    <PW_Page_Header Ref="7" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item8 Ref="8" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item8>
+      </Conditions>
+      <Font>Tahoma,10</Font>
+      <Name>PW_Page_Header</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Page_Header>
+    <PW_Page_Footer Ref="9" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>EmptyBrush</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item10 Ref="10" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item10>
+      </Conditions>
+      <Font>Tahoma,13,Bold</Font>
+      <Name>PW_Page_Footer</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Page_Footer>
+    <PW_Group_Header1 Ref="11" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item12 Ref="12" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item12>
+      </Conditions>
+      <Font>Tahoma,13,Bold</Font>
+      <Name>PW_Group_Header1</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Group_Header1>
+    <PW_Group_Footer1 Ref="13" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>EmptyBrush</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item14 Ref="14" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item14>
+      </Conditions>
+      <Font>Tahoma,9.75,Bold,Point,False,204</Font>
+      <Name>PW_Group_Footer1</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Group_Footer1>
+    <PW_Header1 Ref="15" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Bottom;[192:80:70];3;None;False;4;Black</Border>
+      <Brush>White</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item16 Ref="16" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item16>
+      </Conditions>
+      <Font>Tahoma,8,Bold</Font>
+      <Name>PW_Header1</Name>
+      <TextBrush>Black</TextBrush>
+    </PW_Header1>
+    <PW_Data1 Ref="17" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;Black;1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item18 Ref="18" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item18>
+      </Conditions>
+      <Font>B Yekan,8.25,Regular,Point,False,178</Font>
+      <Name>PW_Data1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </PW_Data1>
+    <PW_Data1_Odd_x0020_Style Ref="19" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>WhiteSmoke</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item20 Ref="20" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item20>
+      </Conditions>
+      <Font>Tahoma,8</Font>
+      <Name>PW_Data1_Odd Style</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </PW_Data1_Odd_x0020_Style>
+    <PW_Data1_Even_x0020_Style Ref="21" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>EmptyBrush</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item22 Ref="22" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item22>
+      </Conditions>
+      <Font>Tahoma,8</Font>
+      <Name>PW_Data1_Even Style</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </PW_Data1_Even_x0020_Style>
+    <PW_Footer1 Ref="23" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseHorAlignment>True</AllowUseHorAlignment>
+      <AllowUseVertAlignment>True</AllowUseVertAlignment>
+      <Border>None;[0:0:0];1;Solid;False;4;Black</Border>
+      <Brush>EmptyBrush</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item24 Ref="24" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item24>
+      </Conditions>
+      <Font>Tahoma,10,Bold</Font>
+      <HorAlignment>Right</HorAlignment>
+      <Name>PW_Footer1</Name>
+      <TextBrush>Black</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </PW_Footer1>
+    <PW_Data_Small Ref="25" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;Black;1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>PW</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item26 Ref="26" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item26>
+      </Conditions>
+      <Font>Tahoma,6</Font>
+      <Name>PW_Data_Small</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </PW_Data_Small>
+  </Styles>
+</StiSerializer>

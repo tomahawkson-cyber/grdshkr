@@ -1,0 +1,18 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPagePW.master" AutoEventWireup="true"
+    Inherits="PW.WorkFlows.Web.Admin.InsertPrintViewer" Title="شرکت دنیای پردازش :: معرفی مسئول چاپ احکام"
+    CodeBehind="InsertPrintViewer.aspx.cs" %>
+
+<%@ Register Src="~/Admin/UC/InsertPrintViewer.ascx" TagName="UC_InsertPrintViewer"
+    TagPrefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <title>شرکت دنیای پردازش :: معرفی مسئول چاپ احکام</title>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table style="width: 100%; height: 100%">
+        <tr>
+            <td align="center" valign="top">
+                <uc1:UC_InsertPrintViewer ID="InsertPrintViewer1" runat="server" />
+            </td>
+        </tr>
+    </table>
+</asp:Content>

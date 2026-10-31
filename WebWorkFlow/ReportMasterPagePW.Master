@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ReportMasterPagePW.Master.cs"
+    Inherits="PW.WorkFlows.Web.ReportMasterPagePW" %>
+
+<%@ Register Src="~/UC/bottomlogo.ascx" TagName="bottomlogo" TagPrefix="uc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="rtl">
+<head runat="server">
+    <title>شرکت دنیای پردازش</title>
+    <meta http-equiv="Content-Language" content="fa" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=8" />
+    <meta name="CODE_LANGUAGE" content="C#" />
+
+    <link href="<%=ResolveUrl("~/Style/Css.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/portal.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/calendar.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/pager.css" ) %>" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" language="JavaScript" src="<%= ResolveUrl("~/Scripts/jquery1.10.2.min.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/tools.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/shdate.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/calendar.js") %>"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div align="center">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+        </div>
+        <table align="center" cellpadding="0" cellspacing="0" width="975">
+            <tr>
+                <td>
+                    <table class="TBLHeader" align="center">
+                        <tr>
+                            <td valign="middle">
+                                <img width="100%" height="100px" src="../images/Header.jpg" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="TBLMenu" align="center">
+                        <tr>
+                            <td width="50%"></td>
+                            <td style="white-space: nowrap;">
+                                <table id="tblmenu_ctlMenuMenuBar" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td nowrap="NOWRAP" style="cursor: hand">
+                                            <a href="<%= ResolveUrl("~/Default.aspx") %>">
+                                                <img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" border="0" />صفحه اصلی&nbsp; </a>
+                                        </td>
+                                        <td>
+                                            <img src="<%= ResolveUrl("~/images/menu_sep.gif") %>" border="0" />
+                                        </td>
+                                        <td id="tdChangePass" runat="server" style="cursor: hand" nowrap="nowrap">
+                                            <img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" border="0" />
+                                            <asp:LinkButton ID="BtnChangePass" runat="server" CssClass="CommandButton" BackColor="#B6B6B6"
+                                                OnClick="BtnChangePass_Click">تغییر رمزعبور</asp:LinkButton>
+                                        </td>
+                                        <td id="tdSChangePass" runat="server">
+                                            <img src="<%= ResolveUrl("~/images/menu_sep.gif") %>" border="0">
+                                        </td>
+                                        <td id="tdExit" runat="server" style="cursor: hand" nowrap="nowrap">
+                                            <img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" border="0" />
+                                            <asp:LinkButton ID="btnExit" runat="server" CssClass="CommandButton" BackColor="#B6B6B6"
+                                                OnClick="btnExit_Click">خروج - تغییر کاربری</asp:LinkButton>
+                                        </td>
+                                        <td id="tdSExit" runat="server">
+                                            <img src="<%= ResolveUrl("~/images/menu_sep.gif") %>" border="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="50%"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="TBLBreadcrumbs" align="center">
+                        <tr>
+                            <td width="100%" style="white-space: nowrap;">&nbsp;<img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>">&nbsp;<asp:Label ID="lblUserInfo" runat="server">نام کاربری :: میثم چگینی شماره پرسنلی 1537 سلام</asp:Label>
+                            </td>
+                            <td class="DateModule" style="white-space: nowrap;">
+                                <asp:Label ID="lblDateTime" runat="server">سه شنبه هفتم اردیبهشت 1389</asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%" class="TBLContainer">
+                        <tr>
+                            <td class="contentpane" align="center" valign="top">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="TBLRed" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table class="TBLbottom" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <uc:bottomlogo ID="bottomlogo1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="4">
+      <value>,SubTitle,SubTitle,System.String,مانده_x0020_مرخصی_x0020_در_x0020_تاریخ,False,False</value>
+      <value>,Title,Title,System.String,نام_x0020_شرکت,False,False</value>
+      <value>,ReportDate,ReportDate,System.String,_x0031_394_x002F_05_x002F_01,False,False</value>
+      <value>,ReportTime,ReportTime,System.String,_x0031_2:20,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="2" type="Page" isKey="true">
+      <Border>All;Black;2;None;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="0" />
+      <Conditions isList="true" count="0" />
+      <Guid>71d60ebafa6e431c9ab223c0c81ce5a9</Guid>
+      <Margins>0,0,0.5,0.5</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="3" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="4" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/25/2017 5:56:44 PM</ReportChanged>
+  <ReportCreated>9/27/2015 4:09:00 PM</ReportCreated>
+  <ReportFile>C:\Users\PC73\Source\Workspaces\Kara\Kara.Report\KaraReports\TitleReport-Landscape-WithoutTitle.mrt</ReportFile>
+  <ReportGuid>125d9d88d46f40e49f24daaad38995b5</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2015.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+		public static string ConvertMinutesToTime(decimal inputParameter)
+		{		
+			int input= int.Parse(inputParameter.ToString());
+			input= ((input / 60) * 100) + (input % 60);
+			if (input.ToString().Length &gt; 2)
+			{
+				return input.ToString().Insert(input.ToString().Length - 2, ":");
+			}
+			return input.ToString();
+		}
+		public static string ConvertMinutesToHours(int inputParameter)
+		{
+			int input= (inputParameter / 60);
+			return input.ToString();
+		}	
+		
+		public static string ConvertMinutesToHoursForSum(object inputParameter)
+		{
+			if(inputParameter == null)
+				return "";
+			int input= int.Parse(inputParameter.ToString());
+			
+			int hours= (input / 60);
+			
+			if((input%60)&gt;30)
+				hours=hours+1;
+			if(hours&lt;=0)
+				return "";
+			return hours.ToString();
+		}	
+		
+		public static string ConvertTimeToMinutes(object inputParameter)
+		{
+			if(inputParameter == null)
+				return "";
+			int input= int.Parse(inputParameter.ToString());
+			
+			var result=(((input/100)*60)+(input%100));
+			if(result&lt;=0)
+				return "";
+			return result.ToString();
+		}
+	
+		public static string DayFormatPersent(object inputParameter,object r2t)
+		{
+			if(inputParameter == null)
+				return "";
+			string tf=r2t.ToString();
+			if(tf=="")
+				return inputParameter.ToString();
+			
+			return inputParameter.ToString()+" روز("+tf+"%)";
+		}
+		public static string DayFormat(object inputParameter,object r2t)
+		{
+			if(inputParameter == null)
+				return "";
+			string tf=TimeFormat(r2t);
+			if(tf=="")
+				return inputParameter.ToString();
+			
+			return inputParameter.ToString()+" روز("+tf+")";
+		}
+		public static string TimeFormat(object inputParameter)
+		{
+			if(inputParameter == null)
+				return "";
+			int input= int.Parse(inputParameter.ToString());
+			if(input==0)
+				return "";
+			
+			string inputStr=input.ToString();
+			
+			if (inputStr.Length == 1)
+				inputStr="00"+inputStr;
+				
+			else if (inputStr.Length == 2)
+				inputStr="0"+inputStr;
+			
+			if (inputStr.Length &gt;= 2)
+			{
+				return inputStr.Insert(inputStr.Length - 2, ":");
+			}
+			return input.ToString();
+		}
+		public static string TimeFormat(object inputParameter,object percent)
+		{
+			if(inputParameter == null)
+				return "";
+			return	TimeFormat(inputParameter)+"("+percent.ToString()+"% )";
+		}
+		
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

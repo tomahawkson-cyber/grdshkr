@@ -1,0 +1,723 @@
+﻿.alert-box {
+    color: #555;
+    border-radius: 10px;
+    font-family: Tahoma,Geneva,Arial,sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    margin: 10px;
+    background: #e3f7fc;
+    border: 1px solid #8ed9f6;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+input[type="text"], input[type="number"], textarea, input[type="password"], select {
+    border-color: #D3D3D3 #C2C2C2 #AFAFAF;
+    -ms-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    -moz-resize: none;
+    -ms-resize: none;
+    -o-resize: none;
+    resize: none;
+}
+
+input[type="submit"], input[type="button"] {
+    border-left: 1px solid #5E9DB3;
+    border-right: 1px solid #5D9BB2;
+    border-top: 1px solid #75B7CB;
+    border-bottom: 1px solid #49859D;
+    -ms-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    visibility: inherit;
+}
+
+.bd {
+    direction: rtl;
+}
+
+.mainTable {
+    background-color: LightSteelBlue;
+    width: 100%;
+    direction: rtl;
+}
+
+.timeCell {
+    cursor: pointer;
+    background-color: Blue;
+    color: White;
+}
+
+.timeCell2 {
+    cursor: pointer;
+}
+
+#progressBackgroundFilter {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    -webkit-filter: alpha(opacity=50);
+    -moz-filter: alpha(opacity=50);
+    -o-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 950;
+}
+
+#Modalreq {
+    position: absolute;
+    padding: 10px;
+    z-index: 951;
+    background-color: #fff;
+    border: solid 1px #000;
+    width: 55%;
+    -moz-min-width: 500px;
+    -ms-min-width: 500px;
+    -o-min-width: 500px;
+    -webkit-min-width: 500px;
+    min-width: 700px;
+    margin-top: 2%;
+    margin-right: 5%;
+    max-width: 800px;
+}
+
+#triggerBackgroundFilter {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    -webkit-filter: alpha(opacity=50);
+    -moz-filter: alpha(opacity=50);
+    -o-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 1950;
+}
+
+.progressBackgroundFilter {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    -webkit-filter: alpha(opacity=50);
+    -moz-filter: alpha(opacity=50);
+    -o-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 950;
+}
+
+.Modalreq {
+    position: absolute;
+    top: 17%;
+    left: 40%;
+    padding: 10px;
+    z-index: 951;
+    background-color: #fff;
+}
+
+#processMessage {
+    position: fixed;
+    top: 17%;
+    left: 43%;
+    padding: 10px;
+    z-index: 1951;
+    background-color: #fff;
+    border: solid 1px #000;
+}
+
+#ModalMessage {
+    position: fixed;
+    top: 17%;
+    left: 30%;
+    padding: 10px;
+    z-index: 1001;
+    background-color: #fff;
+    border: solid 1px #000;
+}
+
+#BackgroundFilter {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    -webkit-filter: alpha(opacity=50);
+    -moz-filter: alpha(opacity=50);
+    -o-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 1003;
+}
+
+#ModalMsg {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    padding: 10px;
+    z-index: 1004;
+    background-color: #fff;
+    border: solid 1px #000;
+}
+
+.tableInfo TH {
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-family: Tahoma, Arial, Helvetica;
+}
+
+body {
+    font-family: Tahoma;
+    height: 100%;
+}
+
+.LinkButton {
+    color: #800000;
+    text-decoration: none;
+    border: 1px solid #800000;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: Tahoma;
+    font-size: 8pt;
+}
+
+.modalPopup {
+    background-color: #ffffdd;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width: 250px;
+}
+
+.demoarea {
+    padding: 20px;
+    background: #FFF url(images/demotop.png) no-repeat left top;
+}
+
+A {
+    font-family: Tahoma;
+    font-size: 8pt;
+    color: #000066;
+    text-decoration: none;
+}
+
+TABLE {
+    font-size: 8pt;
+    color: #000000;
+    text-decoration: none;
+}
+
+H1 {
+    font-family: Tahoma;
+    font-size: 10pt;
+    color: #800000;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10pt;
+    height: 40px;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffecec', EndColorStr='#ffffff');
+}
+
+h3 {
+    font-family: Tahoma;
+    font-size: 10pt;
+    color: #800000;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    height: 40px;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffecec', EndColorStr='#ffffff');
+}
+
+h2 {
+    border-right: #eeeeee 1px solid;
+    padding-right: 20px;
+    border-top: #eeeeee 1px solid;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    padding-bottom: 3px;
+    border-left: #eeeeee 1px solid;
+    width: 100%;
+    color: #163357;
+    padding-top: 3px;
+    border-bottom: #eeeeee 1px solid;
+    font-family: Tahoma, Verdana;
+    background-color: #f7f7f7;
+}
+
+.CopyRight {
+    font-size: 9pt;
+    color: #808080;
+}
+
+.NewsTitle {
+    font-family: Tahoma;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #FF9900;
+    font-weight: 600;
+}
+
+.newsPreTitle {
+    font-family: Tahoma;
+    font-size: 8pt;
+    color: #808080;
+    text-decoration: none;
+}
+
+.rowAlternative {
+    background-color: #F3F3F3;
+}
+
+.nLink_2 {
+    font-family: Tahoma;
+    font-size: 8pt;
+    color: #000066;
+    text-decoration: none;
+}
+
+.nLink {
+    font-family: Tahoma;
+    font-size: 8pt;
+    text-decoration: none;
+    color: #800000;
+}
+
+.titleText_1 {
+    font-size: 8pt;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #B00000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.titleText_2 {
+    font-family: Tahoma;
+    font-size: 8pt;
+    color: #800000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nTextBox {
+    font-size: 8pt;
+    color: #800000;
+    text-decoration: none;
+    border: 1px solid #800000;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: Tahoma;
+}
+
+.NormalText {
+    font-size: 8pt;
+    color: #000000;
+    text-decoration: none;
+}
+
+.RedDatagrid {
+    font-size: 8pt;
+    color: #000000;
+    text-decoration: none;
+}
+
+.RedDatagridHeader {
+    font-family: Tahoma;
+    font-size: 8pt;
+    color: #800000;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #ffecec;
+    text-align: center;
+}
+
+.RedDatagridAlternate {
+    background-color: #F3F3F3;
+    text-align: center;
+}
+
+.DGAlternate {
+    background-color: #F3F3F3;
+}
+
+.DGItem {
+    background-color: White;
+}
+
+.RedDatagridItem {
+    background-color: White;
+    text-align: center;
+}
+
+.RedDatagridPager {
+    text-align: center;
+    color: #800000;
+    background-color: #ffecec;
+}
+
+.RedDatagridSelected {
+    font-weight: 600;
+    font-size: 8pt;
+    color: #800000;
+    font-family: Tahoma;
+    background-color: lemonchiffon;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ShakhesIcon {
+    font-family: Wingdings;
+    font-size: 12px;
+}
+
+.marq {
+    border: #dcdcdc thin solid;
+}
+
+
+SELECT {
+    font-family: Tahoma;
+    font-size: 8pt;
+}
+
+.TblOne {
+    border-top-width: 1px;
+    border-right: #c0c0c0 1px solid;
+    border-left: #c0c0c0 1px solid;
+    border-top-color: #c0c0c0;
+    border-bottom: #c0c0c0 1px solid;
+}
+
+.TblTwo {
+    border-right: #c0c0c0 1px solid;
+    border-top: #c0c0c0 1px solid;
+    border-left: #c0c0c0 1px solid;
+    border-bottom: #c0c0c0 1px solid;
+}
+
+.MainForm_admin {
+    border-right: silver 1px solid;
+    border-top: silver 1px solid;
+    border-left: silver 1px solid;
+    border-bottom: silver 1px solid;
+}
+
+.Search {
+    left: 660px;
+    position: absolute;
+    top: 220px;
+}
+
+
+.NewsTitle {
+    font-weight: 600;
+    font-size: 10pt;
+    color: #0000cc;
+}
+
+.NewsBody {
+    font-size: 9pt;
+    color: #000000;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.NewsInfo {
+    font-size: 8pt;
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.MenuNormal a {
+    border-right: #FFFFFF 1px solid;
+    padding-right: 3px;
+    border-top: #FFFFFF 1px solid;
+    padding-left: 3px;
+    font-weight: 600;
+    font-size: 12px;
+    padding-bottom: 3px;
+    border-left: #FFFFFF 1px solid;
+    color: #FFFFFF;
+    padding-top: 3px;
+    border-bottom: #FFFFFF 1px solid;
+    background-color: #C60000;
+    text-decoration: none;
+}
+
+    .MenuNormal a:hover {
+        border-right: #800000 1px solid;
+        padding-right: 3px;
+        border-top: #800000 1px solid;
+        padding-left: 3px;
+        font-weight: 600;
+        font-size: 12px;
+        padding-bottom: 3px;
+        border-left: #800000 1px solid;
+        color: #B23535;
+        padding-top: 3px;
+        border-bottom: #800000 1px solid;
+        background-color: #FFD7D7;
+        text-decoration: none;
+    }
+
+INPUT {
+    color: #800000;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 8pt;
+}
+
+select {
+    border: 1px solid lightgrey;
+    color: #0000ff;
+    background-color: #ffffee;
+    margin-bottom: 0px;
+}
+
+.Cmb {
+    direction: rtl;
+    text-align: center;
+}
+
+.btn {
+    background: linear-gradient(#ced2d8 0%, #8a8c8d 100%);
+    font-family: Tahoma;
+    font-size: 8pt;
+    border-color: gray;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    min-height: 22px;
+    margin: 3px;
+    color: black;
+    min-width: 40px;
+}
+
+    .btn:hover {
+        border: 1px solid gray;
+        background: linear-gradient(#ced2d8 0%, #eef 100%);
+        cursor: pointer;
+    }
+
+.btnHeader {
+    background: white;
+    font-family: Tahoma;
+    font-size: 8pt;
+    border-color: #75B7CB #5D9BB2 #49859D #5E9DB3;
+    -ms-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    max-width: 150px;
+    min-height: 30px;
+    color: black;
+}
+
+    .btnHeader:hover {
+        background: linear-gradient(#ced2d8 0%, #eef 100%);
+        border: 1px solid #0099CC;
+        cursor: pointer;
+    }
+
+button {
+    border: 1px solid #006;
+    background: #ccf;
+    font-family: Tahoma;
+    font-size: 8pt;
+    height: 19px;
+}
+
+    button:hover {
+        border: 1px solid #0099CC;
+        background: #eef;
+        cursor: hand;
+    }
+
+.btnGrd {
+    border: 1px solid #0099CC;
+    background: white;
+    cursor: pointer;
+}
+
+    .btnGrd:hover {
+        border: 1px solid #006;
+        background: #ccf;
+        font-family: Tahoma;
+        font-size: 8pt;
+    }
+
+.btnGrdGroup {
+    border: 1px solid #0099CC;
+    background: white;
+    cursor: default;
+}
+
+    .btnGrdGroup:hover {
+        border: 1px solid #006;
+        background: #ccf;
+        font-family: Tahoma;
+        font-size: 8pt;
+    }
+
+input:hover {
+    background: #FFFFCC;
+}
+
+.capt1 {
+    background-image: url('../Images/BT.png');
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.cap {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    height: 24px;
+    background-image: url('../images/Bottom_BG.jpg');
+    border-top: 0px;
+    text-align: center;
+    color: #aaaaaa;
+}
+
+    .cap:hover {
+        font-family: Tahoma;
+        font-size: 10pt;
+        color: Yellow;
+        cursor: hand;
+    }
+
+.dv {
+    border: 1px outset #000000;
+    width: 400px;
+}
+
+table table {
+    font-family: Tahoma;
+    font-size: 8pt;
+    margin-bottom: 0px;
+}
+
+.Ddl {
+    -moz-min-width: 100px;
+    -ms-min-width: 100px;
+    -o-min-width: 100px;
+    -webkit-min-width: 100px;
+    min-width: 100px;
+    width: 100px;
+}
+
+.EditDevice {
+    display: none;
+}
+
+.TdLblSty {
+    vertical-align: middle;
+    text-align: left;
+    max-width: 120px;
+    white-space: nowrap;
+}
+
+.TdEditorSty {
+    vertical-align: middle;
+    text-align: right;
+}
+
+
+caption {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    height: 24px;
+    background-image: url('../images/Bottom_BG.jpg');
+    border-top: 0px;
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 10pt;
+}
+
+    caption:hover {
+        font-family: tahoma;
+        color: Yellow;
+    }
+
+
+.cap1 {
+    font-family: Tahoma;
+    font-size: 10pt;
+    color: #800000;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10pt;
+    height: 40px;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffecec', EndColorStr='#ffffff');
+}
+
+.menu {
+    font-family: tahoma;
+    background-color: #FFCC99;
+    border: thin solid #CC3300;
+    color: #FFFFFF;
+}
+
+.Captionkartable {
+    font-size: 14px;
+    text-align: center;
+    height: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #000000;
+    background-color: #eeeeee;
+}
+
+.ParallelApprove {
+    background-color: #FFFFEC;
+    border-color: #555555;
+    border-style: Solid;
+    border-width: 2px;
+    padding: 5px;
+    width: 95%;
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 4px;
+}

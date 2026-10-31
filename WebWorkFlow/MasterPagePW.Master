@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPagePW.Master.cs"
+    Inherits="PW.WorkFlows.Web.MasterPagePW" %>
+
+<%@ Register Src="~/UC/bottomlogo.ascx" TagName="bottomlogo" TagPrefix="uc" %>
+<%@ Register Src="~/UC/NewMenu.ascx" TagName="NewMenu" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="rtl">
+<head runat="server">
+    <title>شرکت دنیای پردازش</title>
+    <meta http-equiv="x-ua-compatible" content="IE=8" />
+    <link rel="shortcut icon" href="Workflow.ico" type="image/x-icon" />
+
+    <link href="<%=ResolveUrl("~/Style/Css.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/portal.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/calendar.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/notificationmsg.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/accordion.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/pager.css" ) %>" rel="stylesheet" type="text/css" />
+    <link href="<%=ResolveUrl("~/Style/jquery.alerts.css") %>" rel="stylesheet" />
+
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery1.10.2.min.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery.signalR-2.2.2.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/signalr/hubs") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/ui.core.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/ui.notificationmsg.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/tools.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/shdate.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/calendar.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery.alerts.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/masterPage.js") %>"></script>
+    <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/signalR.js") %>"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        var currentLocationResolve = "<%=ResolveUrl("~/Default.aspx")%>"
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <ul id="menu" class="jeegoocontext cm_default">
+        </ul>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="600">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/webkit.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <div align="center">
+            <input id="Edit_AlertData" type="hidden" runat="server" />
+        </div>
+        <table id="tblMaster" align="center" cellpadding="0" cellspacing="0" width="98%">
+            <tr>
+                <td>
+                    <table class="TBLHeader" align="center">
+                        <tr>
+                            <td valign="middle">
+                                <img alt="نرم افزار گردش کار" width="100%" height="100px" src="<%= ResolveUrl("~/images/Header.jpg") %>" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="TBLMenu" align="center">
+                        <tr>
+                            <td width="50%"></td>
+                            <td style="white-space: nowrap;">
+                                <table id="tblmenu_ctlMenuMenuBar" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td nowrap="NOWRAP" style="cursor: hand">
+                                            <a href="<%= ResolveUrl("~/Default.aspx") %>">
+                                                <img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" border="0" alt="" />صفحه اصلی&nbsp; </a>
+                                        </td>
+                                        <td>
+                                            <img src="<%= ResolveUrl("~/images/menu_sep.gif") %>" border="0" />
+                                        </td>
+                                        <td id="tdSubStitute" runat="server" style="cursor: hand">
+                                            <img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" border="0" />
+                                            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="CommandButton" BackColor="#B6B6B6"
+                                                OnClick="BtnSubStitute_Click">معرفی جانشین</asp:LinkButton>
+                                        </td>
+                                        <td id="tdSSubStitute" runat="server">
+                                            <img src="<%= ResolveUrl("~/images/menu_sep.gif") %>" border="0" />
+                                        </td>
+                                        <td id="tdConferment" runat="server" style="cursor: hand">
+                                            <img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" border="0" />
+                                            <asp:LinkButton ID="BtnConferment" runat="server" CssClass="CommandButton" BackColor="#B6B6B6"
+                                                OnClick="BtnConferment_Click">تفویض اختیار</asp:LinkButton>
+                                        </td>
+                                        <td id="tdSConferment" runat="server">
+                                            <img src="<%= ResolveUrl("~/images/menu_sep.gif") %>" border="0" />
+                                        </td>
+                                        <td id="tdChangePass" runat="server" style="cursor: hand">
+                                            <img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" border="0" />
+                                            <asp:LinkButton ID="BtnChangePass" runat="server" CssClass="CommandButton" BackColor="#B6B6B6"
+                                                OnClick="BtnChangePass_Click">تغییر رمزعبور</asp:LinkButton>
+                                        </td>
+                                        <td id="tdSChangePass" runat="server">
+                                            <img src="<%= ResolveUrl("~/images/menu_sep.gif") %>" border="0" />
+                                        </td>
+                                        <td id="tdExit" runat="server" style="cursor: hand">
+                                            <img src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" border="0" />
+                                            <asp:LinkButton ID="btnExit" runat="server" CssClass="CommandButton" BackColor="#B6B6B6"
+                                                OnClick="btnExit_Click">خروج - تغییر کاربری</asp:LinkButton>
+                                        </td>
+                                        <td id="tdSExit" runat="server">
+                                            <img src="<%= ResolveUrl("~/images/menu_sep.gif") %>" border="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="50%" align="left">
+                                <a target="_blank" onclick="GetHelpLink() " style="cursor: pointer">
+                                    <img src="<%= ResolveUrl("~/images/question.png") %>" /></a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="TBLBreadcrumbs" align="center">
+                        <tr>
+                            <td width="100%" style="white-space: nowrap;">&nbsp;<img alt="گردش کار" src="<%= ResolveUrl("~/images/breadcrumbs.gif") %>" />&nbsp;<asp:Label ID="lblUserInfo" runat="server">نام کاربری :: میثم چگینی شماره پرسنلی 1537 سلام</asp:Label>
+                            </td>
+                            <td class="DateModule" style="white-space: nowrap;">
+                                <asp:Label ID="lblDateTime" runat="server">سه شنبه هفتم اردیبهشت 1389</asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="TBLContainer">
+                    <div style="float: right; width: 15%; vertical-align: top; min-height: 500px;">
+                        <asp:Image ID="ImgEmployee" runat="server" Style="border: thin solid #FF9966; background-color: #949494; width: 100px; margin-top: 5px; margin-right: 20%" />
+                        <uc1:NewMenu ID="Menu1" runat="server" />
+                    </div>
+                    <div style="float: left; vertical-align: top; text-align: center; width: 84%; height: 100%">
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                                <asp:UpdateProgress runat="server" ID="UpdateProgress1" DynamicLayout="false" AssociatedUpdatePanelID="UpdatePanel1">
+                                    <ProgressTemplate>
+                                        <div id="triggerBackgroundFilter1">
+                                        </div>
+                                        <div id="processMessage">
+                                            <img alt="Loading" src="<%= ResolveUrl("~/images/loading.gif") %>" />
+                                        </div>
+                                    </ProgressTemplate>
+                                </asp:UpdateProgress>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <br />
+                                <br />
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="TBLRed" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table class="TBLbottom" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <uc:bottomlogo ID="bottomlogo1" runat="server" />
+                </td>
+            </tr>
+        </table>
+        <div id="msg1">
+            <div id="modal">
+                <div class="modaltop">
+                    <div class="modaltitle">
+                        پیامهای رسیده
+                    </div>
+                    <span id="closebutton" style="cursor: hand">
+                        <img alt="Hide Popup" src="<%= ResolveUrl("~/Style/img/close_vista.gif") %>" border="0" onclick="closeMsg();" />
+                    </span>
+                </div>
+                <div class="modalbody">
+                    <span id="modalbody"></span>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
