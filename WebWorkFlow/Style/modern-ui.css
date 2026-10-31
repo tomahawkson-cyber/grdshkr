@@ -1,0 +1,334 @@
+/* Modern visual layer for WebWorkFlow.
+   Presentation only: keep all WebForms controls, IDs, events and scripts unchanged. */
+:root {
+    --wf-ink: #17243b;
+    --wf-muted: #6c7890;
+    --wf-primary: #2457a6;
+    --wf-primary-dark: #173f80;
+    --wf-accent: #21a6a0;
+    --wf-line: #e3e9f2;
+    --wf-surface: #ffffff;
+    --wf-page: #f3f6fb;
+    --wf-shadow: 0 12px 34px rgba(28, 48, 82, .08);
+}
+html { min-height: 100%; background: var(--wf-page); }
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 22px 0 32px;
+    direction: rtl;
+    color: var(--wf-ink);
+    background: linear-gradient(180deg, #eaf0fa 0, #f5f7fb 260px, #f5f7fb 100%);
+    font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+}
+#form1, #Form1 { width: 100%; }
+#tblMaster {
+    width: min(96%, 1540px) !important;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+}
+.TBLHeader {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--wf-line);
+    border-radius: 18px 18px 0 0;
+    border-bottom: 0;
+    box-shadow: var(--wf-shadow);
+}
+.TBLHeader img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+}
+.TBLMenu {
+    width: 100%;
+    min-height: 48px;
+    background: #fff;
+    border: 1px solid var(--wf-line);
+    border-top: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+.TBLMenu table { width: auto !important; margin: 0 auto; }
+.TBLMenu td { padding: 7px 5px; vertical-align: middle; }
+.TBLMenu a, .TBLMenu .CommandButton {
+    display: inline-block;
+    padding: 7px 12px;
+    color: #34445f !important;
+    background: transparent !important;
+    border: 0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background .18s ease, color .18s ease;
+}
+.TBLMenu a:hover, .TBLMenu .CommandButton:hover {
+    color: var(--wf-primary) !important;
+    background: #edf3ff !important;
+    text-decoration: none;
+}
+.TBLMenu img { vertical-align: middle; opacity: .45; }
+.TBLBreadcrumbs {
+    width: 100%;
+    min-height: 42px;
+    color: #eaf1ff;
+    background: linear-gradient(100deg, #1b3767, #28579a);
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 0;
+}
+.TBLBreadcrumbs td { padding: 8px 14px; color: #edf4ff; }
+.TBLBreadcrumbs img { vertical-align: middle; opacity: .8; }
+.TBLBreadcrumbs .DateModule { color: #d7e4fb; }
+.TBLContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 540px;
+    padding: 22px;
+    overflow: visible;
+    background: #f8faff;
+    border: 1px solid var(--wf-line);
+    border-top: 0;
+    border-bottom: 0;
+}
+.TBLContainer > div {
+    float: none !important;
+    height: auto !important;
+    min-height: 500px;
+    box-sizing: border-box;
+}
+.TBLContainer > div:first-child {
+    flex: 0 0 238px;
+    width: 238px !important;
+    padding: 14px;
+    background: #fff;
+    border: 1px solid var(--wf-line);
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(28,48,82,.045);
+}
+.TBLContainer > div:first-child > img {
+    display: block;
+    width: 88px !important;
+    height: 88px !important;
+    margin: 0 auto 14px !important;
+    object-fit: cover;
+    border: 3px solid #e7eefb !important;
+    border-radius: 50%;
+    background: #eef3fb !important;
+}
+.TBLContainer > div:nth-child(2) {
+    flex: 1 1 auto;
+    width: auto !important;
+    min-width: 0;
+    padding: 20px;
+    text-align: right !important;
+    background: #fff;
+    border: 1px solid var(--wf-line);
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(28,48,82,.045);
+}
+.TBLRed { height: 3px; background: var(--wf-accent); border: 0; }
+.TBLbottom {
+    width: 100%;
+    height: 34px;
+    background: #eaf0f8;
+    border: 1px solid var(--wf-line);
+    border-top: 0;
+    border-radius: 0 0 14px 14px;
+}
+.TBLFooter { width: 100%; }
+.CopyRight, .PoweredBy, .FooterText { color: var(--wf-muted); }
+a, A { color: var(--wf-primary); text-decoration: none; }
+a:hover, A:hover { color: var(--wf-primary-dark); text-decoration: none; }
+h1, h2, h3, h4 { color: var(--wf-ink); font-family: inherit; }
+h1, h3 {
+    height: auto;
+    padding: 12px 0;
+    color: var(--wf-primary);
+    background: transparent;
+    filter: none;
+}
+h2 {
+    width: auto;
+    padding: 10px 14px;
+    color: var(--wf-primary-dark);
+    background: #f1f5fc;
+    border: 1px solid var(--wf-line);
+    border-radius: 9px;
+    font-size: 14px;
+}
+input[type="text"], input[type="number"], input[type="password"], textarea, select {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 9px 11px;
+    color: var(--wf-ink);
+    background: #fff;
+    border: 1px solid #d6deeb;
+    border-radius: 8px;
+    font: inherit;
+    outline: none;
+    transition: border-color .18s ease, box-shadow .18s ease;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus,
+textarea:focus, select:focus {
+    border-color: #7ca4e5;
+    box-shadow: 0 0 0 3px rgba(49, 108, 196, .11);
+}
+input:hover, select:hover, textarea:hover { background-color: #fff; }
+input[type="submit"], input[type="button"], button, .btn, .btnHeader, .LinkButton {
+    min-height: 34px;
+    padding: 7px 15px;
+    color: #fff !important;
+    background: linear-gradient(135deg, #2b64b5, #214d91) !important;
+    border: 1px solid #214d91 !important;
+    border-radius: 8px !important;
+    font: 600 12px Tahoma, Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(33,77,145,.14);
+    transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+}
+input[type="submit"]:hover, input[type="button"]:hover, button:hover, .btn:hover, .btnHeader:hover, .LinkButton:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(33,77,145,.2);
+}
+table { color: var(--wf-ink); }
+table table { font-family: inherit; }
+.news-section {
+    margin: 0 0 16px;
+    padding: 16px 18px;
+    direction: rtl;
+    background: #fff;
+    border: 1px solid var(--wf-line);
+    border-bottom: 3px solid #dce7f7;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(28,48,82,.045);
+}
+.news-section h4 {
+    margin: 0 0 12px;
+    padding-bottom: 9px;
+    color: var(--wf-primary-dark);
+    border-bottom: 1px solid var(--wf-line);
+    font-size: 16px;
+}
+.news-section p { margin: 10px 0; padding-bottom: 10px; border-bottom: 1px solid #f0f3f8; }
+.news-section p:last-child { border-bottom: 0; }
+.news-section span { display: inline-block; margin-right: 10px; color: var(--wf-muted); font-size: 11px; }
+.alert, .alert-info {
+    padding: 13px 16px;
+    margin-bottom: 14px;
+    color: #31547f;
+    text-align: right;
+    text-shadow: none;
+    background: #edf5ff;
+    border: 1px solid #d8e7fa;
+    border-radius: 10px;
+}
+#page { padding: 16px; background: transparent; border-radius: 12px; }
+.accordionHeader, .accordionHeaderSelected {
+    display: block;
+    margin: 5px 0;
+    padding: 10px 12px;
+    color: #34445f;
+    background: #f1f5fb;
+    border: 1px solid #e4eaf3;
+    border-radius: 8px;
+    font: 600 12px Tahoma, Arial, sans-serif;
+    cursor: pointer;
+}
+.accordionHeader:hover, .accordionHeaderSelected {
+    color: #174785;
+    background: #eaf2ff;
+    border-color: #cdddf5;
+}
+.accordionContent {
+    padding: 7px 9px 10px;
+    background: #fff;
+    border: 1px solid #edf1f7;
+    border-radius: 8px;
+}
+.accordionContent a {
+    display: block;
+    margin: 3px 0;
+    padding: 7px 9px;
+    color: #53627a;
+    border-radius: 6px;
+    font-size: 11px;
+}
+.accordionContent a:hover { color: var(--wf-primary); background: #f1f6ff; }
+#msg1 #modal {
+    border: 1px solid var(--wf-line);
+    border-radius: 12px;
+    box-shadow: var(--wf-shadow);
+    overflow: hidden;
+}
+#msg1 .modaltop { padding: 10px 14px; color: #fff; background: var(--wf-primary-dark); }
+#msg1 .modalbody { padding: 16px; background: #fff; }
+#processMessage { border: 1px solid var(--wf-line); border-radius: 10px; box-shadow: var(--wf-shadow); }
+#triggerBackgroundFilter1 { background: rgba(17, 31, 54, .38); }
+img { max-width: 100%; }
+#Form1 > table {
+    width: min(94%, 966px) !important;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+#Form1 .TBLHeader { border-radius: 18px; border-bottom: 1px solid var(--wf-line); }
+#Form1 .TBLHeader .TDHeader { height: 112px; border-radius: 18px; }
+#table7 {
+    width: min(100%, 420px) !important;
+    margin: 22px auto 12px;
+    padding: 12px;
+    color: var(--wf-ink);
+    background: #fff !important;
+    border: 1px solid var(--wf-line);
+    border-radius: 16px;
+    box-shadow: var(--wf-shadow);
+}
+#table7 caption {
+    height: auto;
+    padding: 13px 16px;
+    color: #fff;
+    background: linear-gradient(110deg, #1b3767, #2b62a8);
+    border: 0;
+    border-radius: 10px;
+    font: 600 15px Tahoma, Arial, sans-serif;
+}
+#table7 td { padding: 7px 8px; }
+#table7 input[type="text"], #table7 input[type="password"] { width: 100% !important; min-width: 0; }
+#table7 input[type="submit"] { min-width: 100px; }
+#table7 img { max-width: 100%; border-radius: 7px; }
+@media (max-width: 900px) {
+    body { padding: 10px 0 20px; }
+    #tblMaster { width: 98% !important; }
+    .TBLContainer { display: block; padding: 12px; }
+    .TBLContainer > div:first-child, .TBLContainer > div:nth-child(2) {
+        width: 100% !important;
+        min-height: 0;
+        margin: 0 0 12px;
+    }
+    .TBLBreadcrumbs td { white-space: normal !important; }
+    .TBLMenu > tbody > tr > td:first-child { display: none; }
+    .TBLMenu table { width: 100% !important; }
+    .TBLMenu td { padding: 4px 1px; }
+    .TBLMenu a, .TBLMenu .CommandButton { padding: 6px 7px; font-size: 11px; }
+}
+@media (max-width: 560px) {
+    .TBLHeader img { height: 76px; }
+    .TBLBreadcrumbs td { display: block; padding: 5px 10px; }
+    .TBLMenu table, .TBLMenu tbody, .TBLMenu tr { display: block; }
+    .TBLMenu td { display: inline-block; }
+    #Form1 > table { width: 96% !important; }
+    #table7 { padding: 8px; }
+}
