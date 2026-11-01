@@ -5,6 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html  dir="rtl">
 <head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>شرکت دنیای پردازش :: ورود کاربران </title>
     <meta http-equiv="x-ua-compatible" content="IE=8" />
     <link href="Style/Css.css" rel="stylesheet" type="text/css" />
@@ -18,13 +19,15 @@
     <table align="center" cellpadding="0" cellspacing="0" width="966">
         <tr>
             <td>
-                <table class="TBLHeader" align="center">
-                    <tr>
-                        <td class="TDHeader" valign="middle">
-                            &nbsp;
-                        </td>
-                    </tr>
-                </table>
+        <header class="wf-brandbar flex items-center gap-4 px-8 py-6">
+            <div class="wf-brandmark" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="wf-brandcopy">
+                <div class="wf-brand-eyebrow">سامانه یکپارچه سازمانی</div>
+                <div class="wf-brand-title">گردش کار</div>
+                <div class="wf-brand-subtitle">مدیریت درخواست‌ها، مجوزها و فرآیندهای سازمانی</div>
+            </div>
+            <div class="wf-brand-meta"><span class="wf-brand-dot"></span><span>سامانه مدیریت فرآیندها</span></div>
+        </header>
             </td>
         </tr>
         <tr>
