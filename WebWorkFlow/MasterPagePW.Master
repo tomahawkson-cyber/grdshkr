@@ -19,6 +19,7 @@
     <link href="<%=ResolveUrl("~/Style/pager.css" ) %>" rel="stylesheet" type="text/css" />
     <link href="<%=ResolveUrl("~/Style/jquery.alerts.css") %>" rel="stylesheet" />
     <link href="<%=ResolveUrl("~/Style/modern-ui.css") %>" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery1.10.2.min.js") %>"></script>
     <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery.signalR-2.2.2.js") %>"></script>
@@ -53,13 +54,20 @@
         <table id="tblMaster" align="center" cellpadding="0" cellspacing="0" width="98%">
             <tr>
                 <td>
-                    <table class="TBLHeader" align="center">
-                        <tr>
-                            <td valign="middle">
-                                <img alt="نرم افزار گردش کار" width="100%" height="100px" src="<%= ResolveUrl("~/images/Header.jpg") %>" />
-                            </td>
-                        </tr>
-                    </table>
+                    <header class="wf-brandbar">
+                        <div class="wf-brandmark" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="wf-brandcopy">
+                            <div class="wf-brand-eyebrow">سامانه یکپارچه سازمانی</div>
+                            <div class="wf-brand-title">گردش کار</div>
+                            <div class="wf-brand-subtitle">مدیریت درخواست‌ها، مجوزها و فرآیندهای سازمانی</div>
+                        </div>
+                        <div class="wf-brand-meta">
+                            <span class="wf-brand-dot"></span>
+                            <span>سامانه مدیریت فرآیندها</span>
+                        </div>
+                    </header>
                 </td>
             </tr>
             <tr>
