@@ -332,3 +332,91 @@ img { max-width: 100%; }
     #Form1 > table { width: 96% !important; }
     #table7 { padding: 8px; }
 }
+
+
+/* Refined visual refresh — header and navigation */
+.wf-brandbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 132px;
+    box-sizing: border-box;
+    padding: 24px 34px;
+    overflow: hidden;
+    color: #fff;
+    direction: rtl;
+    background: linear-gradient(112deg, #101f3d 0%, #183b70 55%, #176b78 100%);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 22px 22px 0 0;
+    box-shadow: 0 18px 42px rgba(17, 39, 76, .16);
+}
+.wf-brandbar:before, .wf-brandbar:after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 50%;
+}
+.wf-brandbar:before { width: 270px; height: 270px; left: 9%; top: -180px; }
+.wf-brandbar:after { width: 190px; height: 190px; left: 19%; bottom: -145px; }
+.wf-brandmark {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    padding: 13px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 17px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.12);
+}
+.wf-brandmark span { display:block; width:7px; border-radius:5px 5px 2px 2px; background:#77e0d2; }
+.wf-brandmark span:nth-child(1) { height:17px; opacity:.72; }
+.wf-brandmark span:nth-child(2) { height:28px; }
+.wf-brandmark span:nth-child(3) { height:22px; opacity:.86; }
+.wf-brandcopy { position:relative; z-index:1; display:flex; flex-direction:column; gap:2px; }
+.wf-brand-eyebrow { color:#b8d4f3; font-size:10px; font-weight:600; letter-spacing:.4px; }
+.wf-brand-title { color:#fff; font-size:29px; line-height:1.35; font-weight:800; letter-spacing:-.6px; }
+.wf-brand-subtitle { color:#d3e2f5; font-size:12px; }
+.wf-brand-meta {
+    position:relative; z-index:1; display:flex; align-items:center; gap:8px;
+    margin-right:auto; padding:8px 13px; color:#d9f5f1;
+    background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.13);
+    border-radius:30px; font-size:10px;
+}
+.wf-brand-dot { width:7px; height:7px; border-radius:50%; background:#62ddbd; box-shadow:0 0 0 4px rgba(98,221,189,.14); }
+.TBLMenu { min-height:58px; }
+.TBLMenu td { padding:9px 5px; }
+.TBLMenu a, .TBLMenu .CommandButton { padding:8px 13px; border-radius:10px; font-size:12px; }
+.TBLMenu td > img, .TBLMenu a > img { display:none; }
+.TBLMenu td:has(> img) { color:#d8e1ef; }
+.TBLBreadcrumbs { min-height:44px; background:#f0f5fc; border-bottom:1px solid var(--wf-line); }
+.TBLBreadcrumbs td, .TBLBreadcrumbs td label { color:#43536c !important; }
+.TBLBreadcrumbs .DateModule { color:#71819a !important; }
+.TBLContainer { gap:18px; padding:20px; background:#f4f7fc; }
+.TBLContainer > div:first-child { flex-basis:250px; width:250px !important; border-radius:16px; }
+.TBLContainer > div:nth-child(2) { border-radius:16px; }
+.accordionHeader, .accordionHeaderSelected { padding:12px 13px; border-radius:10px; font-size:12px; }
+.accordionContent { padding:8px; }
+.accordionContent a { padding:9px 10px; font-size:12px; line-height:1.7; }
+.accordionContent a:hover { transform:translateX(-2px); }
+.news-section { padding:20px 22px; border:1px solid var(--wf-line); border-bottom:1px solid var(--wf-line); border-radius:15px; }
+.news-section h4 { color:#1e477f; font-size:16px; }
+#page { padding:18px; }
+#Form1 .wf-brandbar { margin:0 auto 18px; width:min(94%,966px); border-radius:20px; }
+#Form1 .TBLHeader { display:none; }
+@media (max-width:700px) {
+    .wf-brandbar { min-height:112px; padding:18px; gap:12px; }
+    .wf-brandmark { flex-basis:48px; width:48px; height:48px; padding:10px; }
+    .wf-brand-title { font-size:23px; }
+    .wf-brand-subtitle { max-width:240px; font-size:10px; }
+    .wf-brand-meta { display:none; }
+    .TBLContainer { padding:12px; }
+}
