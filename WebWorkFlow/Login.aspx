@@ -10,6 +10,7 @@
     <link href="Style/Css.css" rel="stylesheet" type="text/css" />
     <link href="Style/portal.css" rel="stylesheet" type="text/css" />
     <link href="Style/modern-ui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="Workflow.ico" type="image/x-icon" />
 </head>
 <body>
