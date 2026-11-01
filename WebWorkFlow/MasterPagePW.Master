@@ -20,7 +20,6 @@
     <link href="<%=ResolveUrl("~/Style/pager.css" ) %>" rel="stylesheet" type="text/css" />
     <link href="<%=ResolveUrl("~/Style/jquery.alerts.css") %>" rel="stylesheet" />
     <link href="<%=ResolveUrl("~/Style/modern-ui.css") %>" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery1.10.2.min.js") %>"></script>
     <script type="text/javascript" language="JavaScript" src="<%=ResolveUrl("~/Scripts/jquery.signalR-2.2.2.js") %>"></script>
@@ -144,11 +143,11 @@
             </tr>
             <tr>
                 <td class="TBLContainer">
-                    <div style="float: right; width: 15%; vertical-align: top; min-height: 500px;">
+                    <aside class="wf-sidebar">
                         <asp:Image ID="ImgEmployee" runat="server" Style="border: thin solid #FF9966; background-color: #949494; width: 100px; margin-top: 5px; margin-right: 20%" />
                         <uc1:NewMenu ID="Menu1" runat="server" />
-                    </div>
-                    <div style="float: left; vertical-align: top; text-align: center; width: 84%; height: 100%">
+                    </aside>
+                    <main class="wf-main">
                         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                             <ContentTemplate>
                                 <asp:UpdateProgress runat="server" ID="UpdateProgress1" DynamicLayout="false" AssociatedUpdatePanelID="UpdatePanel1">
@@ -166,7 +165,7 @@
                                 <br />
                             </ContentTemplate>
                         </asp:UpdatePanel>
-                    </div>
+                    </main>
                 </td>
             </tr>
             <tr>
